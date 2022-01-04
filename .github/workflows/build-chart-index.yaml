@@ -26,7 +26,7 @@ jobs:
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         name: commit to gh-pages
-        if: ${{ github.ref == 'refs/heads/master' && github.event.pull_request.merged == 'true' }}
+        if: ${{ github.ref == 'refs/heads/master' }}
         with:
           # Optional, but recommended
           # Defaults to "Apply automatic changes"
